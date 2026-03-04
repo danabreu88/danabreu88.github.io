@@ -100,6 +100,21 @@
             transform: scale(1.02);
             filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.15));
         }
+        <body>
+    <!-- Navigation -->
+    <div class="nav-bar" style="position: absolute; top: 20px; right: 20px; z-index: 100;">
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="index.html" class="nav-link" style="color: #ffffff; text-decoration: none; padding: 8px 16px; border-radius: 30px; background: rgba(255,255,255,0.1);">Home</a>
+            <a href="gallery.html" class="nav-link" style="color: #ffffff; text-decoration: none; padding: 8px 16px; border-radius: 30px; background: rgba(255,255,255,0.1);">Gallery</a>
+        </div>
+    </div>
+    
+    <!-- Loading indicator (hidden after load) -->
+    <div class="loading-indicator" id="loadingIndicator"></div>
+    
+    <!-- Main content container -->
+    <div class="container">
+        <!-- ... rest of your existing code ... -->
 
         /* Contact Section */
         .contact-section {
