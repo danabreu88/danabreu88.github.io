@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Skate Laces - $15 | Custom Skate Laces</title>
-    <meta name="description" content="Premium custom skate laces for $15. High-quality, durable design perfect for hockey and figure skating.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — customskatelaces.com</title>
+  <meta name="description" content="Buy Custom Skate Laces for $15. Premium quality, fast shipping." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="logo.
+
+  <div class="bg-grid"></div>
+  <div class="grain"></div>
+
+  <header>
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Custom Skate Laces" />
+      <span class="logo-text">Custom<em>Skate</em>Laces</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="product.html" class="active">Product</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <h1>The Product</h1>
+      <p>Handpicked quality &nbsp;·&nbsp; Skater approved</p>
+    </div>
+
+    <section class="product-section">
+
+      <div class="product-image-wrap">
+        <img src="product.jpg" alt="Custom Skate Laces" />
+        <div class="corner-br"></div>
+      </div>
+
+      <div class="product-details">
+        <div class="product-badge">
+          <span class="badge-dot"></span>
+          In Stock
+        </div>
+
+        <h2>Custom Skate Laces</h2>
+        <p class="product-price">$15</p>
+
+        <p class="product-desc">
+          These aren't your average laces. Built for skaters who want their setup to look as good as it performs. Made from durable woven polyester, reinforced at the tips, and available in a variety of colors to match any shoe or board setup.
+        </p>
+
+        <ul class="product-specs">
+          <li><span>Material</span> <span>Woven Polyester</span></li>
+          <li><span>Length</span> <span>45" / 114cm</span></li>
+          <li><span>Tip</span> <span>Reinforced Metal Aglet</span></li>
+          <li><span>Shipping</span> <span>1–2 Business Days</span></li>
+          <li><span>Price</span> <span>$15 per pair</span></li>
+        </ul>
+
+        <button class="btn btn-primary buy-btn" onclick="handleBuy()">Buy Now — $15</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>customskatelaces.com</strong> &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="product.html">Product</a> &nbsp;·&nbsp; <a href="about.html">About</a></p>
+    <p style="margin-top:0.5rem;">&copy; 2026 customskatelaces.com. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleNav() { document.getElementById('main-nav').classList.toggle('open'); }
+    function handleBuy() { alert('Thanks for your interest! Payment processing coming soon.'); }
+  </script>
+</body>
+</html>
