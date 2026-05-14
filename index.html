@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Skate Laces - Premium Quality Hockey & Figure Skating Laces</title>
-    <meta name="description" content="Premium custom skate laces for hockey and figure skating. High-quality, durable laces designed for performance and style.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Skate Laces — customskatelaces.com</title>
+  <meta name="description" content="Premium custom skate laces. Lace up your style." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="logo.png" alt="Custom Skate Laces Logo" class="logo-img">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="product.html" class="nav-link">Product</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Premium Custom Skate Laces</h1>
-                    <p class="hero-subtitle">Engineered for performance, designed for durability. Elevate your skating experience with our high-quality custom laces.</p>
-                    <a href="product.html" class="cta-button">Shop Now</a>
-                </div>
-            </div>
-        </section>
+  <div class="bg-grid"></div>
+  <div class="grain"></div>
 
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>Premium Quality</h3>
-                        <p>Made from the finest materials for maximum durability and performance on the ice.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Custom Fit</h3>
-                        <p>Perfectly sized for your skates with options for every skating discipline.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Professional Grade</h3>
-                        <p>Trusted by professional athletes and skating enthusiasts worldwide.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <header>
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Custom Skate Laces" />
+      <span class="logo-text">Custom<em>Skate</em>Laces</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 customskatelaces.com. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#contact">Contact</a>
-            </div>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-lines"></div>
+
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Premium Skate Gear
+      </div>
+
+      <h1>
+        <span class="line-outline">Lace</span>
+        <span class="line-solid">Your</span>
+        <span class="line-blue">Style.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Custom skate laces built for riders who take their setup as seriously as their tricks. Stand out at every spot.
+      </p>
+
+      <div class="hero-actions">
+        <a href="product.html" class="btn btn-primary">Shop Now — $15</a>
+        <a href="about.html" class="btn btn-ghost">Our Story</a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="features-inner">
+        <div class="feature-card">
+          <div class="feat-num">01</div>
+          <h3>Custom Colors</h3>
+          <p>Choose from a wide range of colorways to match your board, shoes, and vibe. Make it yours.</p>
         </div>
-    </footer>
+        <div class="feature-card">
+          <div class="feat-num">02</div>
+          <h3>Built to Last</h3>
+          <p>Heavy-duty woven construction that holds up to the grind — literally. No fraying, no fading.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-num">03</div>
+          <h3>Fast Shipping</h3>
+          <p>Orders ship within 1–2 business days. Get laced up and back on your board fast.</p>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="wm">SKATE</div>
+      <h2>Ready to Lace Up?</h2>
+      <p>One pair. Endless style. Just $15.</p>
+      <a href="product.html" class="btn btn-ghost">View Product</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>customskatelaces.com</strong> &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="product.html">Product</a> &nbsp;·&nbsp; <a href="about.html">About</a></p>
+    <p style="margin-top:0.5rem;">&copy; 2026 customskatelaces.com. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
