@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — customskatelaces.com</title>
+  <meta name="description" content="The story behind Custom Skate Laces — built by a hockey player, for hockey teams." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-section {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 4.5rem auto 6rem;
+      padding: 0 2rem;
+    }
+    .about-section h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 2.25rem;
+      text-transform: uppercase;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--white);
+    }
+    .about-section p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.9;
+      margin-bottom: 1.25rem;
+    }
+    .about-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--electric);
+      margin: 0.5rem 0 1.5rem;
+    }
+    .about-mission {
+      border-left: 3px solid var(--electric);
+      padding: 1.25rem 1.5rem;
+      margin: 2.5rem 0;
+      background: rgba(21,87,255,0.06);
+    }
+    .about-mission p {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.35rem;
+      text-transform: uppercase;
+      color: var(--white);
+      margin: 0;
+      letter-spacing: 0.04em;
+    }
+    .about-signature {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(21,87,255,0.15);
+    }
+    .about-signature p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .about-signature strong {
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="grain"></div>
+  <header>
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="Custom Skate Laces" />
+      <span class="logo-text">Custom<em>Skate</em>Laces</span>
+    </a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="page-hero">
+      <h1>Our Story</h1>
+      <p>Built by a hockey player. For hockey teams.</p>
+    </div>
+    <section class="about-section">
+      <h2>The Story</h2>
+      <div class="about-divider"></div>
+      <p>Growing up, hockey shops were my version of a candy store.</p>
+      <p>I'd walk in and take it all in — the smell of fresh tape, the rows of sticks, the gear hung perfectly on every wall. Every piece of equipment felt like it meant something. Like it was part of who you were as a player.</p>
+      <p>I played for Andover Hockey Association from 1994 to 2007. Thirteen years on the ice. And one thing I noticed early — you could customize almost everything about your game. Your stick. Your gloves. Your helmet. But your laces? They were always the same.</p>
+      <p>That stuck with me.</p>
+      <h2>Why Custom Skate Laces</h2>
+      <div class="about-divider"></div>
+      <p>I still play today. And I still believe that the details matter — not just for performance, but for pride. When a team looks unified from head to skate, something shifts. You feel it in the locker room. You feel it on the ice.</p>
+      <p>That's the idea behind Custom Skate Laces. One pair of laces. Your team's logo. On every stride.</p>
+      <p>We work with a trusted manufacturer to produce durable, high-quality laces — printed with your organization's colors and crest. Built to hold up through a full season of practices, games, and everything in between.</p>
+      <h2>Who We're For</h2>
+      <div class="about-divider"></div>
+      <p>Custom Skate Laces was built for youth hockey teams first. The kids who are just starting to fall in love with the game the way I did. The parents who watch from the glass and want their kid to feel like they belong to something.</p>
+      <p>If older players want in — we're not going to say no.</p>
+      <p>But at our core, this is about the next generation of players. Giving them one more reason to love this game.</p>
+      <div class="about-mission">
+        <p>Inject team pride into every detail of the uniform. Unite the team.</p>
+      </div>
+      <div class="about-signature">
+        <p><strong>— Dan Abreu, Founder</strong></p>
+        <p>AHA Alumni &nbsp;·&nbsp; Class of '07</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><strong>customskatelaces.com</strong> &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="product.html">Product</a> &nbsp;·&nbsp; <a href="about.html">About</a> &nbsp;·&nbsp; <a href="contact.html">Contact</a></p>
+    <p style="margin-top:0.5rem;">&copy; 2026 customskatelaces.com. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleNav() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
